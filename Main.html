@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Участники</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="icon"></div>
+<div class="container">
+    <header>
+        <a href="Profile.html" class="profile-link">Мой кабинет</a>
+        <h1 style="font-size: 50px; font-family: 'Panama Demo'; font-weight: normal;">УЧАСТНИКИ <img src="img/56.png" style="width: 50px; height: 50px;"/> </h1>
+    </header>
+
+    <!-- Фильтрация -->
+    <div class="filters">
+        <label for="skills">Категория</label>
+        <select id="category">
+            <option value="all">Все</option>
+            <option value="manager">Менеджер</option>
+            <option value="designer">Дизайнер</option>
+            <option value="developer">Разработчик</option>
+        </select>
+
+        <label for="skills">Навыки</label>
+        <select id="skills">
+            <option value="all">Все</option>
+            <option value="seo">SEO</option>
+            <option value="react">React</option>
+            <option value="tailwind">Tailwind</option>
+            <option value="canvas">Lean Canvas</option>
+            <option value="figjam">FigJam</option>
+            <option value="cjm">CJM</option>
+            <option value="ux">UX-Research</option>
+            <option value="htmlcss">HTML&CSS</option>
+        </select>
+    </div>
+
+    <main id="user-list">
+        <!-- Карточка 1 -->
+        <div class="user-card" data-category="manager" data-skills="seo, canvas">
+            <div class="avatar-section">
+                <img class="avatar" src="img/avatar1.png" alt="avatar">
+            </div>
+            <div class="user-details">
+                <h3>Виктор Махатыров</h3>
+                <div class="skills">
+                    <span>Менеджер</span>
+                    <span class="skill">Lean Canvas</span>
+                    <span class="skill">SEO</span>
+                    <span class="badge">3</span>
+                </div>
+                <p class="quote">"Работаем!"</p>
+            </div>
+            <div class="additional-info">
+                <p><b>Место учебы:</b> РГУ им. А.Н. Косыгина</p>
+                <p><b>Город:</b> г. Москва</p>
+            </div>
+        </div>
+
+        <!-- Карточка 2 -->
+        <div class="user-card" data-category="designer" data-skills="CJM, ux">
+            <div class="avatar-section">
+                <img class="avatar" src="img/avatar2.png" alt="avatar">
+            </div>
+            <div class="user-details">
+                <h3>Егоров Никита</h3>
+                <div class="skills">
+                    <span>Дизайнер</span>
+                    <span class="skill">CJM</span>
+                    <span class="skill">UX-Research</span>
+                </div>
+                <p class="quote">"egorov.d.nikita@mail.ru"</p>
+            </div>
+            <div class="additional-info">
+                <p><b>Место учебы:</b> ЯКСЭ (выпускник)</p>
+                <p><b>Место работы:</b> Ростелеком ИТ</p>
+                <p><b>Город:</b> г. Якутск</p>
+            </div>
+        </div>
+
+        <!-- Карточка 3 -->
+        <div class="user-card" data-category="manager" data-skills="seo, figjam">
+            <div class="avatar-section">
+                <img class="avatar" src="img/avatar3.png" alt="avatar">
+            </div>
+            <div class="user-details">
+                <h3>Степанов Павел</h3>
+                <div class="skills">
+                    <span>Менеджер</span>
+                    <span class="skill">FigJam</span>
+                    <span class="skill">SEO</span>
+                    <span class="badge">8</span>
+                </div>
+                <p class="quote">"В качалку нужно ходить или Yes. Волки воют Yes. <br> Гигачад и все дела Yes." </br></p>
+            </div>
+            <div class="additional-info">
+                <p><b>Место учебы:</b> Арктический ГАТУ</p>
+                <p><b>Место работы:</b> Генеральный директор ООО "ГИГАТЕК"</p>
+                <p><b>Город:</b> г. Якутск</p>
+            </div>
+        </div>
+
+        <!-- Карточка 4 -->
+        <div class="user-card" data-category="designer" data-skills="ux">
+            <div class="avatar-section">
+                <img class="avatar" src="img/avatar4.png" alt="avatar">
+            </div>
+            <div class="user-details">
+                <h3>Максим Жирков</h3>
+                <div class="skills">
+                    <span>Дизайнер</span>
+                    <span class="skill">UX-Research</span>
+                    <span class="skill">UI</span>
+                    <span class="badge">6</span>
+                </div>
+                <p class="quote">"Designer in Crypto Web3 - Delab | UTC+9" </br></p>
+            </div>
+            <div class="additional-info">
+                <p><b>Место учебы:</b> ЯКИТ</p>
+                <p><b>Место работы:</b> DeLab</p>
+                <p><b>Город:</b> г. Якутск</p>
+            </div>
+        </div>
+
+        <!-- Карточка 5 -->
+        <div class="user-card" data-category="developer" data-skills="react">
+            <div class="avatar-section">
+                <img class="avatar" src="img/avatar5.png" alt="avatar">
+            </div>
+            <div class="user-details">
+                <h3>Андрей Кычкин</h3>
+                <div class="skills">
+                    <span>Разработчик</span>
+                    <span class="skill">React</span>
+                </div>
+            </div>
+            <div class="additional-info">
+                <p><b>Место учебы:</b> МГУ</p>
+                <p><b>Город:</b> г. Москва</p>
+            </div>
+        </div>
+
+        <!-- Карточка 6 -->
+        <div class="user-card" data-category="developer" data-skills="tailwind, htmlcss">
+            <div class="avatar-section">
+                <img class="avatar" src="img/avatar6.png" alt="avatar">
+            </div>
+            <div class="user-details">
+                <h3>Аян Пахомов</h3>
+                <div class="skills">
+                    <span>Разработчик</span>
+                    <span class="skill">Tailwind</span>
+                    <span class="skill">HTML&CSS</span>
+                    <span class="badge">32</span>
+                </div>
+                <p class="quote">"Ноутбук не тянет доту поэтому я стал разрабом" </br></p>
+            </div>
+            <div class="additional-info">
+                <p><b>Место учебы:</b> СВФУ имени М.К. Амоссова</p>
+                <p><b>Место работы:</b> Работа Клик</p>
+                <p><b>Город:</b> г. Якутск</p>
+            </div>
+        </div>
+    </main>
+</div>
+<footer>
+    <div class="line"></div>
+    <div class="footer-content">
+        <label>&copy; 2022—2024 Хищники</label>
+        <label>Дизайн и разработка <span>Хищники</span></label>
+    </div>
+    <!--<p>&copy; 2022—2024 Хищники. Дизайн и разработка <span>Хищники</span></p>-->
+</footer>
+<script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+<div class="icon"></div>
+<div class="header">
+    <a href="Profile.html" class="profile-link">Мой кабинет</a>
+    <img alt="Background image of a statue" class="gigachad" height="500" src="img/gigachad.png" width="1920"/>
+    <div class="profile-container">
+        <img alt="Profile picture" class="profile-pic" height="100" src="img/person.png" width="100"/>
+        <div class="profile-info">
+            <p>Менеджер</p>
+            <h1>СТЕПАНОВ ПАВЕЛ</h1>
+            <p>“В качалку нужно ходить или Yes. Волки воют Yes. Гигачад и все дела Yes.”</p>
+        </div>
+    </div>
+</div>
+<div class="nav">
+    <a class="active" href="#" onclick="showContent('about', event)">О себе</a>
+    <a href="#" onclick="showContent('achievements', event)">Достижения</a>
+    <a href="#" onclick="showContent('projects', event)">Проекты</a>
+    <a href="#" onclick="showContent('contacts', event)">Контакты</a>
+</div>
+<div class="content active" id="about">
+    <div class="info">
+        <div class="info-left">
+            <div class="info-item">
+                <p class="info-title">Место учебы</p>
+                <p class="info-title3">Арктический государственный агротехнологический университет</p>
+				<hr>
+            </div>
+            <div class="info-item">
+                <p class="info-title">Город</p>
+                <p class="info-title3">г. Якутск</p>
+				<hr>
+            </div>
+        </div>
+        <div class="info-right">
+            <div class="info-item">
+                <p class="info-title">Телефон</p>
+                <p class="info-title3">ООО "Гигатех"</p>
+				<hr>
+            </div>
+            <div class="info-item">
+                <p class="info-title">Дата рождения</p>
+                <p class="info-title3">24.06.2003</p>
+				<hr>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <p class="info-title2" style="text-align: left; width: 100%; color: grey;">Навыки</p>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+        <div class="skill">Навык</div>
+    </div>
+		<hr class="divider">
+</div>
+<div id="achievements" class="content">
+    <h2>Достижения</h2>
+    <p>достижения пользователя.</p>
+</div>
+<div id="projects" class="content">
+    <h2>Проекты</h2>
+    <p>проекты пользователя.</p>
+</div>
+<div id="contacts" class="content">
+            <div class="info-left2">
+            <div class="info-item2">
+                <p class="info-titleContact">Почта</p>
+                <p class="info-titleContact2">pavel_stepanov@mail.ru</p>
+				<hr>
+            </div>
+            <div class="info-item2">
+                <p class="info-titleContact">Сайт</p>
+                <p class="info-titleContact2"> </p>
+				<hr>
+            </div>
+        </div>
+        <div class="info-right2">
+            <div class="info-item">
+                <p class="info-titleContact">Телефон</p>
+                <p class="info-titleContact2">+7 996 317 4293</p>
+				<hr>
+            </div>
+            <div class="info-item">
+                <p class="info-titleContact">Телеграм</p>
+                <p class="info-titleContact2">@XCFIF</p>
+				<hr>
+            </div>
+        </div>
+</div>
+<div class="footer">
+    <div class="footer-left">
+        <p>©2022—2024 Хищники</p>
+    </div>
+    <div class="footer-right">
+        <p>Дизайн и разработка <span class="highlight">ХИЩНИКИ</span></p>
+    </div>
+    <div class="footer-divider"></div>
+</div>
+<script src="script2.js"></script>
+</body>
+</html>
